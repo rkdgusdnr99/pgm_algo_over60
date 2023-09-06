@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf15146-3ccb-42d1-af97-df56f86ff33d" name="변경" comment="60번 남의코드, 짧지만 느림">
-      <change afterPath="$PROJECT_DIR$/src/number61.java" afterDir="false" />
+    <list default="true" id="bdf15146-3ccb-42d1-af97-df56f86ff33d" name="변경" comment="61번, 가져온 코드가 상당히 좋음&#10;어짜피 넘지 않는 것만 알면 되기에 귀찮은 변형이 필요 없음.">
+      <change afterPath="$PROJECT_DIR$/src/number62.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -32,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -56,7 +61,10 @@
       <workItem from="1693211994893" duration="249000" />
       <workItem from="1693216121820" duration="18000" />
       <workItem from="1693222097669" duration="11000" />
-      <workItem from="1693382797648" duration="3459000" />
+      <workItem from="1693382797648" duration="3651000" />
+      <workItem from="1693389308360" duration="23000" />
+      <workItem from="1693958619132" duration="383000" />
+      <workItem from="1693960403464" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="프로그래머스 알고리즘 60번부터 시작">
       <option name="closed" value="true" />
@@ -74,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693212236024</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="61번, 가져온 코드가 상당히 좋음&#10;어짜피 넘지 않는 것만 알면 되기에 귀찮은 변형이 필요 없음.">
+      <option name="closed" value="true" />
+      <created>1693386860254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693386860254</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로그래머스 알고리즘 60번부터 시작" />
     <MESSAGE value="60번 남의코드, 짧지만 느림" />
-    <option name="LAST_COMMIT_MESSAGE" value="60번 남의코드, 짧지만 느림" />
+    <MESSAGE value="61번, 가져온 코드가 상당히 좋음&#10;어짜피 넘지 않는 것만 알면 되기에 귀찮은 변형이 필요 없음." />
+    <option name="LAST_COMMIT_MESSAGE" value="61번, 가져온 코드가 상당히 좋음&#10;어짜피 넘지 않는 것만 알면 되기에 귀찮은 변형이 필요 없음." />
   </component>
 </project>
