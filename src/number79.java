@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class number79 {
+    public int arraySolution(String[] want, int[] number, String[] discount) {
+        int answer = 0;
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        int temp = 0;
+        for (int i = 0; i < want.length; i++) {
+            temp += number[i];
+            for (int j = 0; j < number[i]; j++) {
+                arrayList.add(want[i]);
+            }
+        }
+
+        for (int i = 0; i <= discount.length-temp; i++) {
+            ArrayList<String> copyList = new ArrayList<>(arrayList);
+            for (int j = 0; j < 10; j++) {
+                copyList.remove(discount[i + j]);
+            }
+            if (copyList.isEmpty())
+                answer++;
+        }
+        return answer;
+    }
+
+    public int mapSolution(String[] want, int[] number, String[] discount) { // 훨씬 빠름
+        int answer = 0;
+        int left = 0;
+        int right = 9;
+        Map<String, Integer> map = new HashMap<>();
+        for(int i =0;i<10;i++) map.put(discount[i], map.getOrDefault(discount[i],0)+1);
+        while(right < discount.length){
+            if(check(map,want,number)) answer++;
+
+            right++;
+            if(right < discount.length)
+                map.put(discount[right], map.getOrDefault(discount[right],0)+1);
+            map.put(discount[left],map.get(discount[left])-1);
+            left++;
+        }
+
+        return answer;
+    }
+    private boolean check(Map<String,Integer> map,String[] want,int[] number){
+        for(int i =0;i<want.length;i++){
+            if(map.getOrDefault(want[i],0) != number[i]) return false;
+        }
+        return true;
+    }
+}
