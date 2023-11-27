@@ -1,7 +1,17 @@
 import java.util.Arrays;
 
 public class number133 {
-    public int BestSolution(int[][] triangle) {
+    public int myBestSolution(int[][] triangle) { // 가장 빠르고 가장 간결하다.
+        int high = triangle.length;
+        for (int i = high-2; i >= 0; i--) {
+            for (int j = 0; j < triangle[i].length; j++) {
+                triangle[i][j] += Math.max(triangle[i+1][j], triangle[i+1][j+1]);
+            }
+        }
+        return triangle[0][0];
+    }
+
+    public int ascBestSolution(int[][] triangle) {
         for (int i = 1; i < triangle.length; i++) {
             triangle[i][0] += triangle[i-1][0];
             triangle[i][i] += triangle[i-1][i-1];
@@ -11,7 +21,8 @@ public class number133 {
 
         return Arrays.stream(triangle[triangle.length-1]).max().getAsInt();
     }
-    public int mySolution(int[][] triangle) {
+
+    public int ascSolution(int[][] triangle) {
         int answer = 0;
         int high = triangle.length;
         int wide = triangle[high-1].length;
