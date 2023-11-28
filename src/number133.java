@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class number133 {
+public class number133 { // 정수 삼각형
     public int myBestSolution(int[][] triangle) { // 가장 빠르고 가장 간결하다.
         int high = triangle.length;
         for (int i = high-2; i >= 0; i--) {
