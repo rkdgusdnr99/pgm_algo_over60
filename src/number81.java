@@ -13,7 +13,7 @@ public class number81 {
 
         Queue<Integer> answerQueue = new LinkedList<>();
         int now = date.poll();
-        int day = 1;
+        int day = now;
         int temp = 0;
         int sum = progresses.length;
 
